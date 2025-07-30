@@ -1,16 +1,27 @@
 body{
     background-color: #1e1e2f;
+    padding: 0px;
+    margin: 0px;
 }
 
 label{
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 h1{
     padding: 4rem;
     text-align: center;
 
+}
+
+h4{
+    margin: 0rem;
+}
+
+#tamanho{
+    margin: 0rem 1rem 0rem 1rem;
 }
 .bordaFora{
     background-color: #2e2e3e;
@@ -27,7 +38,7 @@ h1{
     margin: 2rem 0rem 0rem 2rem;
 }
 
-
-
-
+.botoesSenha{
+    display: flex;
+}
 
