@@ -32,13 +32,14 @@ if (checkboxNumeros.checked) {
 if (checkboxSimbolos.checked) {
   caracteres += '!@#$%&*';
 }
-
+    // Pega a Ultima combinação do while
     let paraFunsaoSenha = 1
     while (paraFunsaoSenha <= tamanhoSenha) {
         const indice = Math.floor(Math.random() * caracteres.length);
         senha += caracteres[indice];
         paraFunsaoSenha++;
     }
+    // Ira Retornar no Navegador Site: https://gerador-senhas-bay.vercel.app/
     console.log(senha);
 }
 
