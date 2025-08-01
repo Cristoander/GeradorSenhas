@@ -32,6 +32,10 @@ if (checkboxNumeros.checked) {
 if (checkboxSimbolos.checked) {
   caracteres += '!@#$%&*';
 }
+ if (caracteres === '') {
+        alert('Selecione pelo menos uma opção!');
+        return;
+    }
     // Pega a Ultima combinação do while
     let paraFunsaoSenha = 1
     while (paraFunsaoSenha <= tamanhoSenha) {
