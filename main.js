@@ -4,10 +4,10 @@ let tamanhoSenha = 1 //Controla o Tamanho Da senha
 document.getElementById('tamanho').innerHTML = tamanhoSenha
 
 function botaoMenos(){
-    if (tamanhoSenha = 1 ){
+        if (tamanhoSenha < 1 ){
         tamanhoSenha = 1
     }
-    document.getElementById('tamanho').innerHTML =  --tamanhoSenha
+        document.getElementById('tamanho').innerHTML =  --tamanhoSenha
 
 }
 function botaoMais(){
@@ -40,7 +40,12 @@ if (checkboxSimbolos.checked) {
         paraFunsaoSenha++;
     }
     // Ira Retornar no Navegador Site: https://gerador-senhas-bay.vercel.app/
-    console.log(senha);
+    document.getElementById('mostrarSenha').innerHTML = senha
 }
 
 
+function copiarSenha(){
+    let senhaCopiada = document.getElementById('mostrarSenha').textContent
+    navigator.clipboard.writeText(senhaCopiada)
+
+}

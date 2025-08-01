@@ -42,3 +42,7 @@ h4{
     display: flex;
 }
 
+.arrumandoBotao{
+    display: flex;
+    margin-bottom: 1rem;
+}
